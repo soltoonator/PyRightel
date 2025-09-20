@@ -11,6 +11,9 @@ root: ``https://myrightel-api.rightel.ir/``
 ||**Authentication** |
 | login using password | ``/v2/auth/login/password/`` | post | ``{"msisdn":"09####","password":"####"}`` | accessToken, refreshToken, phone number, meli code, simcard type, owners first name | 200,401 | "version" | if login succeeds the response will be 200 with an access token and if it failes it returns 401 with a message on why it failed |
 | verify token | ``/v2/auth/`` | post | empty | same accessToken, refreshToken, phone number, meli code | 200,401 | "version","Authorization" | if the fed Authorization header is valid the result will be 200 and the same auth is returned back with a refresh token in the response data and if its not valid or expired it returns 401 |
+|active login sessions|``/v2/auth/token/device/``|  untested | untested | untested | untested | untested | untested |
+|log out active session |``/v2/auth/device/logout/``|  untested | untested | untested | untested | untested | untested |
+|app available|``/v2/app/available/``|  untested | untested | untested | untested | untested |maybe to see if the app api is available and not down or updating?|
 ||**Account balance** |
 | balance | ``/v2/balance/`` | get | none | available to spend internet, sms, phone and wallet credit | 200,401 | "version","Authorization" |  |
 | credit | ``/v2/credit/`` | get | none | info about the credit available in wallet, limits and billing | 200,401 | "version","Authorization" |  |

@@ -5,4 +5,11 @@ for more urgent things please check the [issues](https://github.com/soltoonator/
 
 ---
 
-- to be populated
+#### goals
+- proper project structure
+- proper useage of logging
+- token caching and proper cred management
+- automatic python package builds
+- documenting
+- proper error handeling and hardening
+- multithreading 
